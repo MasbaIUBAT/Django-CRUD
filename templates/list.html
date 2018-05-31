@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	{% for post in post_list %}
+		<p><a href="{% url 'detail' post.id %}">{{post.title}}</a></p>
+	{% endfor %}
+	<p><a href="{% url 'create' %}">Create</a></p>
+</body>
+</html>
